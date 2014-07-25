@@ -1,0 +1,212 @@
+<p><b>INPUT tipos</b></p>
+
+<input type="range" value="20"  placeholder="range" /><br>
+<input type="search" />search<br>
+<input type="tel"  placeholder="tel"/><br>
+<input type="url"  placeholder="url"/><br>
+<input type="email"  placeholder="email"/><br>
+<input type="datetime"/>datetime<br>
+<input type="week" />semana<br>
+<input type="datetime-local" />hora local<br>
+<input type="time" />time<br>
+<input type="date" value="2011-09-20"/>date<br>
+<input type="month" />mont<br>
+<input type="color" value="#0000a0"   />
+
+
+
+<form>
+<input name="b" autofocus>autofocus
+<input type="submit" value="Search">
+</form>
+
+
+
+
+<P><B>PLACEHOLDER</B></P>
+<input type="text" placeholder="USUARIO" size="20" /><br>
+<input type="text" placeholder="APELLIDOS" size="20" /><br>
+<input type="password" color="blue" placeholder="**********" size="20" /><br>
+<textarea placeholder="Escirbe tu comentario, empiesa a rajar" rows="7"></textarea>
+
+<p><b>X-WEBKIT-SPEECH-VOZ</b></p>
+<input type="text" x-webkit-speech="">
+		<br>
+<input type="text" x-webkit-speech="x-webkit-speech">
+
+
+
+<P><B>VIDEO</B></P>
+<video width="320" height="240" controls="controls" controls autoplay preload>
+  <source src="wdf96.mp4" type="video/mp4" />
+  <source src="movie.ogg" type="video/ogg" />
+  Your browser does not support the video tag.
+</video>
+
+
+
+<P><B>CANVAS</B></P>
+
+<canvas id="myCanvas"></canvas>
+<script type="text/javascript">
+var canvas=document.getElementById('myCanvas');
+var ctx=canvas.getContext('2d');
+ctx.fillStyle='#FF0000';
+ctx.fillRect(0,0,80,100);
+</script>
+
+<p><b>PROGRESS</b></p>
+<progress value="2" max="10" >
+</progress>
+
+
+<P><B>SUMMARY</b></P>
+<details>
+<summary>Copyright 1999-2011.</summary>
+<p>All pages and graphics on this web site are the property of the company Refsnes Data.</p>
+</details>
+
+
+
+<P><B>OUTPUT</b></P>
+<form action="demo_form.asp">
+<input name="numa" value="1990" type="number"> +
+<input name="numb" value="2011" type="number"> =
+<output name="result" onforminput="value=numa.valueAsNumber + numb.valueAsNumber"></output><br />
+<input type="submit" />
+</form>
+
+
+<P><B>KEIGEN</b></P>
+<form action="demo_keygen.asp" method="get">
+Username: <input type="text" name="usr_name" />
+Encryption: <keygen name="security" />
+<input type="submit" />
+</form>
+
+<h4><p><B>MARK</b></p></H4>
+<p>Do not forget to buy <mark>milk</mark> today.</p>
+
+<B><P>NAV</P></B>
+<nav>
+<a href="default.asp">Home</a>
+<a href="tag_meter.asp">Previous</a>
+<a href="tag_noscript.asp">Next</a>
+</nav>
+<nav>
+<a href="default.asp">Home</a>
+<a href="tag_meter.asp">Previous</a>
+<a href="tag_noscript.asp">Next</a>
+</nav>
+
+
+<P><b>METER</B></P>
+<meter value="2" min="0" max="10">2 out of 10</meter><br />
+<meter value="0.6">60%</meter>
+<BR>
+
+<P><B>AUDIO</b></P>
+
+<audio controls="controls" controls autoplay preload>
+	<source src="como estas.wav" type="audio/mp3" />
+	<source src="Sabes.mp3" type="audio/mp3" /> 
+  
+   Your browser does not support the audio element.
+</audio>
+
+
+<h2>Preformatted Text</h2>
+
+<pre>There was an Old Man of Moldavia,
+Who had the most curious behaviour;
+For while he was able,
+He slept on a table.
+That funny Old Man of Moldavia.</pre>
+<h3>Code</h3>
+<p>Code can be presented inline, like <code>&lt;?php bloginfo('stylesheet_url'); ?&gt;</code>, or within a <code>&lt;pre&gt;</code> block. </p>
+
+<hr />
+<h2>Blockquotes</h2>
+
+<blockquote><p>Always acknowledge a fault. This will throw those in authority off their guard and give you an opportunity to commit more.</p></blockquote>
+<p>Mark Twain</p>
+
+<hr />
+
+</div>
+
+<h2>Form elements</h2>
+<form method="post" action="">
+
+	<fieldset>
+		<legend>Label</legend>
+		<label for="i">sabe</label>
+		<input id="i" type="text" />
+		<span>*</span>
+	</fieldset>
+	
+	<fieldset>
+
+		<legend>Select</legend>
+		<select>
+			<optgroup label="Fruits">
+				<option>Appler</option>
+				<option>Banana</option>
+				<option>Cherry</option>
+			</optgroup>
+
+			<optgroup label="Vegetables">
+				<option>Asparagus</option>
+				<option>Broccoli</option>
+				<option>Carrots</option>
+			</optgroup>
+		</select>
+	</fieldset>
+
+	
+	<fieldset>
+		<legend>Input (types)</legend>
+		<p><input type="text" value="Text" /></p>
+		<p><input type="password" value="Password" /></p>
+		<p>
+			<input type="checkbox" checked="checked" />
+			<span>1</span>
+			<input type="checkbox" /> <span>2</span>
+
+		</p>
+		<p>
+			<input type="radio" name="n" value="a" checked="checked" />
+			<span>1</span>
+			<input type="radio" name="n" value="b" /> <span>2</span>
+		</p>
+		<p><input type="submit" value="Submit" /></p>
+
+		<p><input type="reset" value="Reset" /></p>
+		<p><input type="hidden" value="Hidden" /></p>
+		<p><input type="image" value="Image" /></p>
+		<p><input type="file" value="File" /></p>
+		<p><input type="button" value="Button" /></p>
+		<p><input type="text" disabled="disabled" value="Disabled" /></p>
+		<p><input type="text" readonly="readonly" value="Read only" /></p>
+	</fieldset>
+	
+	<fieldset>
+
+		<legend>Textarea</legend>
+		<textarea cols="60" rows="3">Text area</textarea>
+	</fieldset>
+	
+	<fieldset>
+		<legend>Button (types)</legend>
+		<p><button type="button">Button</button></p>
+		<p><button type="submit">Submit</button></p>
+
+		<p><button type="reset">Reset</button></p>
+		<p><button disabled="disabled">Disabled</button></p>
+	</fieldset>
+</form>
+</div>
+
+
+
+
